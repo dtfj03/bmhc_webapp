@@ -1,0 +1,14 @@
+.sched-container {
+    display: flex;
+    width: 100%;
+    height: 1000px;
+    margin: none;
+}
+.schedules {
+    background-color: green;
+    color: #eeeeee;
+    width: 30%;
+
+    margin: 1%;
+    padding: 1%
+}

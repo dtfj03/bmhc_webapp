@@ -1,0 +1,21 @@
+.profile-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.profile-photo {
+    width: 25%;
+}
+
+.admPhoto {
+    border-radius: 100%;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0;
+    padding: 0;
+}
+
+.profile-details {
+    width: 60%;
+    margin-left: 3%;
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+    background: #eeeeee;
+    font-family: "Montserrat", sans-serif;
+    color: #388e3c;
+    font-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a { text-decoration: none;
+    color: #388e3c;}
+
+.menu-container {
+    width: 100%;
+    margin-bottom: 1%;
+    background-color: #eeeeee;
+    display: flex;
+    color: #388e3c;
+}
+
+.menu-item {
+    margin-right: 5%;
+    font-size: 1.5em;
+    line-height: 80%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.menu-title {
+    margin-right: 5%;
+    font-size: 1.5em;
+    line-height: 80%;
+}
+
+/* sidebar style here */
+
+.content {
+    margin-left: 26%;
+    padding-left: 1%;
+    padding-right: 4%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:hover {background-color: #ddd;}
+
+input, select { width: 100%;
+        height: 25px;
+        background-color: #ffffff;
+        border: #eeeeee;
+        font-family: "Montserrat", sans-serif;
+        color: green;
+        margin-bottom: 5px;
+}
+
+input[type=submit] { width: auto;
+        height: auto;
+        padding: 10px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 15px;
+        background-color: green;
+        color: #eeeeee;
+        margin-top: 10px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        float: right;
+}
+
+button { width: auto;
+    height: auto;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    background-color: green;
+    color: #eeeeee;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.title { font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: 1%;
+}
+
+.service-icon {
+    height: 120px;
+    width: 120px;
+    margin-right: 1%;
+    float: left;
+}
+
+.patient-container {
+    display: flex;
+    width: 100%;
+}
+
+.patient-data {
+    width: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.sched-container {
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    flex-direction: row;
+}
+
+.sched-item {
+    width: 30%;
+    height: auto;
+    margin: 1%;
+}
