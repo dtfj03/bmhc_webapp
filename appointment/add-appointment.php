@@ -168,6 +168,7 @@
                     <td><?php echo $row['serviceType']; ?></td>
                     <td><?php echo $row['dateOfVisit']; ?></td>
                     <td><?php echo $row['appointmentStatus']; ?></td>
+                    <td><a href="../appointment/appointment-slip.php?id=<?php echo $row['appointmentID']; ?>" target="_blank"><span class="material-symbols-outlined">print</span></a></td>
                 </tr>
             <?php } ?>
         </table>
