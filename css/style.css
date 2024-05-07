@@ -15,22 +15,24 @@ a { text-decoration: none;
 
 .menu-container {
     width: 100%;
-    margin-bottom: 1%;
+    margin: auto;
     background-color: #eeeeee;
     display: flex;
     color: #388e3c;
 }
 
 .menu-item {
-    margin-right: 5%;
+    margin-right: 6%;
     font-size: 1.5em;
     line-height: 80%;
     font-weight: bolder;
     text-align: center;
+    display: grid;
+    place-items: center;
 }
 
 .menu-title {
-    margin-right: 5%;
+    margin-right: 7%;
     font-size: 1.5em;
     line-height: 80%;
 }
@@ -44,6 +46,7 @@ a { text-decoration: none;
 }
 
 table {
+    border: 2px solid #388e3c; /* 2px thickness, black color */
     border-collapse: collapse;
     width: 100%;
 }
@@ -121,3 +124,6 @@ button { width: auto;
     height: auto;
     margin: 1%;
 }
+
+hr { border: 1px solid #388e3c; }
+
