@@ -16,15 +16,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v2">
     <link rel="stylesheet" href="../css/sidebar-style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,1,0" />
 </head>
 
 <body>
-    <div class="menu-container">
+<div class="menu-container">
         <div>
-        <img src="../media/bmhcmh-logo.png" style="height: 70px; margin: none;">
+        <img src="../media/bmhcmh-logo.png?v2" style="height: 70px; margin: none;">
         </div>
         <div class="menu-title">
             <span style="font-size: 0.9em; font-weight:bolder;">Miranda Health Center<br>
@@ -32,17 +32,19 @@
             <span style="font-size:0.6em;">Brgy. Miranda, Pontevedra, Negros Occidental</span>
         </div>
         <div class="menu-item"><a href="../dashboard/dashboard.php">
-            <span class="material-symbols-outlined" style="font-size:1.7em;">home</span><br>HOME</a>
+            <span class="material-symbols-outlined" style="font-size:1.7em;" title="HOME">home</span></a>
         </div>
-        <div class="menu-item"><a href="add-schedule.php">
-            <span class="material-symbols-outlined" style="font-size:1.7em;">calendar_month</span><br>SCHEDULE</a>
+        <div class="menu-item"><a href="../schedule/add-schedule.php">
+            <span class="material-symbols-outlined" style="font-size:1.7em; text-decoration: underline;" title="SCHEDULE">calendar_month</span></a>
         </div>
-        <div class="menu-item"><a href="../patient/search-patient.php">
-            <span class="material-symbols-outlined" style="font-size:1.7em;">person_search</span><br>SEARCH</a>
+        <div class="menu-item"><a href="../patient/add-patient.php">
+            <span class="material-symbols-outlined" style="font-size:1.7em;" title="PATIENTS">person_add</span></a>
         </div>
         <div class="menu-item"><a href="../admProfile/edit-profile.php">
-            <span class="material-symbols-outlined" style="font-size:1.7em;">account_circle</span><br></a>
-            <a href="../admLogin/logout.php">LOGOUT</a>
+            <span class="material-symbols-outlined" style="font-size:1.7em;" title="PROFILE">account_circle</span><br></a>
+        </div>
+        <div class="menu-item">
+            <span style="color: #ca0b00; cursor: pointer; text-decoration: underline;" onclick="location.href='../admLogin/process/logout-session.php'">LOGOUT</span>
         </div>
     </div>
 
@@ -107,7 +109,7 @@
             <label for="note">Comment/Note</label><br>
                 <input type="text" name="sched_note" value="<?=htmlspecialchars($result['eventNote'])?>" /><br>
             <button type="submit" name="update_schedule" value="<?= $result['eventID'] ?>" class="submit">Update Schedule</button>
-            <button type="submit" name="delete_schedule" value="<?= $result['eventID'] ?>" class="submit">Delete Schedule</button>
+            <button type="submit" style="background:#ca0b00;" name="delete_schedule" value="<?= $result['eventID'] ?>" class="submit">Delete Schedule</button>
         </form>
     <?php
     } else {
