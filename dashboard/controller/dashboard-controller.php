@@ -37,3 +37,10 @@ function past_schedule(){
     $result = mysqli_query($conn, $query);
     return $result;
 }
+
+function appointment_slip(){
+    global $conn;
+    $query = "SELECT *, CONCAT(lastName, ', ', firstName, ' ', middleName) patientName FROM appointmenttbl a INNER JOIN patienttbl p ON p.patientID = a.patientID";
+    $result = mysqli_query($conn, $query);
+    return $result;
+}
